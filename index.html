@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dot Dagger</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Botón fijo para abrir el menú -->
+  <button class="btn btn-pink position-fixed top-0 end-0 m-3" data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasMenu">
+    <i class="bi bi-list"></i>
+  </button>
+
+  <!-- Navbar lateral -->
+  <div class="offcanvas offcanvas-end" id="offcanvasMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Dot Dagger</h5>
+      <button type="button" class="btn-close text-light" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="#inicio">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#intereses">Intereses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#juego">Juego</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#redes-sociales">Redes Sociales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <!-- Hero -->
+    <section class="hero d-flex align-items-center text-light" id="inicio">
+      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <div class="hero-text">
+          <h1 class="text-pink typing-name">Dot Dagger</h1>
+          <p id="dynamic-text" class="dynamic-text lead"></p>
+        </div>
+        <img src="./img/dagger-perfil-mas-resolucion.jpg" alt="Foto de perfil de Dot Dagger" class="img-fluid hero-img">
+      </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section class="sobre-mi py-5 bg-dark text-light rounded">
+      <div class="container">
+        <h2 class="text-center text-pink mb-4">Sobre Mí</h2>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="lead">¿Mi filosofía de desarrollo?</p>
+            <p>Si no puedes explicarle tu código a un gato, probablemente necesites simplificarlo. La claridad en el
+              desarrollo es tan importante como el café en una madrugada de programación.</p>
+            <p>Soy un firme creyente de que la vida es mejor con gatos, código y pepinillos crujientes — no
+              necesariamente en ese orden. Cada línea de código que escribo lleva un toque de creatividad, un poco de
+              lógica y una pizca de humor.</p>
+            <p>Mi objetivo es transformar ideas complejas en soluciones simples, como un buen riff de guitarra que
+              encaja perfectamente en la melodía de una canción. Y, por supuesto, mantener la pasión en cada proyecto,
+              porque la programación es tanto arte como ciencia.</p>
+          </div>
+          <div class="col-md-6">
+            <img src="./img/sobre mi.jpg" alt="Imagen representativa de Dot Dagger" class="img-fluid rounded shadow">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Intereses -->
+    <section class=" mb-5" id="intereses">
+      <div class="container">
+        <h2 class="text-center text-pink mb-4">Mis Aficiones</h2>
+
+        <!-- Interés 1: Creador de contenido -->
+        <div class="row align-items-center mb-4">
+          <div class="col-md-6">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/SoblGnOSHws?si=PRIEuQkZssr3mOxW"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="col-md-6">
+            <h3 class="text-pink">Creador de Contenido</h3>
+            <p>Para mí, crear contenido es como programar emociones en tiempo real. Ya sea un video divertido o algo que
+              invite a reflexionar, cada creación busca dejar una pequeña chispa en quien la ve.</p>
+          </div>
+        </div>
+
+        <!-- Interés 2: Amor por los gatos -->
+        <div class="row align-items-center mb-4">
+          <div class="col-md-6 order-md-2">
+            <img src="./img/gato.jpg" alt="Yo y un muy adorable Gatito" class="img-fluid rounded">
+          </div>
+          <div class="col-md-6 order-md-1">
+            <h3 class="text-pink">Amor por los Gatos</h3>
+            <p>Mis gatos son mis colegas más críticos: uno se sienta en mi teclado mientras programo, y el otro me da
+              miradas
+              de desaprobación cada vez que cambio el esquema de colores. ¡Pero no cambiaría su compañía por nada!</p>
+          </div>
+        </div>
+
+        <!-- Interés 3: Amante de los pepinillos -->
+        <div class="row align-items-center mb-4">
+          <div class="col-md-6">
+            <img src="./img/dagger_pepinos.jpg" alt="Yo con mis fieles pepinos" class="img-fluid rounded">
+          </div>
+          <div class="col-md-6">
+            <h3 class="text-pink">Amante de los Pepinillos</h3>
+            <p>¿Quién necesita un patito de goma para depurar cuando tienes pepinillos crujientes al lado? Siempre están
+              ahí
+              para recordarme que la vida puede ser agria, pero también deliciosa.</p>
+          </div>
+        </div>
+
+        <!-- Interés 4: Guitarra -->
+        <div class="row align-items-center mb-4">
+          <div class="col-md-6 order-md-2">
+            <img src="./img/dager_guitarra.jpg" alt="Yo tocando la Guitarra" class="img-fluid rounded">
+          </div>
+          <div class="col-md-6 order-md-1">
+            <h3 class="text-pink">Música y Guitarra</h3>
+            <p>La música es como un segundo lenguaje para mí, uno que no necesita traducción. Desde riffs épicos hasta
+              melodías
+              suaves, tocar la guitarra es mi manera de desconectarme y reconectarme al mismo tiempo.</p>
+          </div>
+        </div>
+
+        <!-- Interés 5: Filosofía -->
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="./img/filosofo.png" alt="Yo modo God" class="img-fluid rounded">
+          </div>
+          <div class="col-md-6">
+            <h3 class="text-pink">Filosofía</h3>
+            <p>¿Qué significa realmente entender el código, la vida o el universo? Mi gata parece tener todas las
+              respuestas,
+              pero yo sigo explorando. La filosofía es mi brújula en este viaje infinito.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Juego -->
+    <section id="juego" class="text-center">
+      <h2 class="text-pink"><i class="bi bi-controller"></i>Te comparto mi mejor vicio
+      </h2>
+      <p>
+        Te presento LumberJack, un juego perfecto para esas noches de codigo extensas donde necesitas relajarte un poco
+        y los pepinos ya no te satisfacen lo suficiente.
+      </p>
+      <iframe title="Lumber Jack Game" src="https://tbot.xyz/lumber/" width="600" height="400"
+        class="border rounded"></iframe>
+    </section>
+
+    <!-- Redes Sociales -->
+    <section class="redes-sociales py-5" id="redes-sociales">
+      <div class="container text-center">
+        <h2 class="text-pink mb-4">¡Conéctate conmigo!</h2>
+        <p class="mb-4">Explora más de mi mundo en las redes. ¡Clickea y descubre!</p>
+        <div class="d-flex justify-content-center gap-4">
+          <!-- Linktree -->
+          <a href="https://linktr.ee/DotDager" target="_blank" class="text-decoration-none text-light">
+            <i class="bi bi-link-45deg fs-1"></i>
+            <p>Linktree</p>
+          </a>
+          <!-- GitHub -->
+          <a href="https://github.com/MarianoVilla" target="_blank" class="text-decoration-none text-light">
+            <i class="bi bi-github fs-1"></i>
+            <p>GitHub</p>
+          </a>
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/dager.32/" target="_blank" class="text-decoration-none text-light">
+            <i class="bi bi-instagram fs-1"></i>
+            <p>Instagram</p>
+          </a>
+          <!-- YouTube -->
+          <a href="https://www.youtube.com/@DotDager" target="_blank" class="text-decoration-none text-light">
+            <i class="bi bi-youtube fs-1"></i>
+            <p>YouTube</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center mt-5" id="footer">
+    <p>© 2024 Dot Dagger. Todos los derechos reservados.<br>"En cada rebanada de la vida, hay un filo afilado." <a
+        href="mailto:mariano@gmail.com">mariano@gmail.com</a></p>
+  </footer>
+
+  <!--Confeti-->
+  <div id="floating-icon" class="hidden">
+    <img src="./img/pepino.png" alt="Pepino" />
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

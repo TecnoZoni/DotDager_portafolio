@@ -1,0 +1,221 @@
+/*
+ESTILOS GENERALES
+*/
+
+body {
+    background: linear-gradient(to bottom, #2d0037, #000);
+    color: #f0e4f4;
+}
+
+.text-pink {
+    color: #ff73ab;
+}
+
+.btn-pink {
+    background-color: #ff73ab;
+    border: none;
+}
+
+.btn-pink:hover {
+    background-color: #a65ea7;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.hero img {
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+.interests {
+    position: relative;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.interests::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.interests-content {
+    position: relative;
+    z-index: 2;
+}
+
+.offcanvas-end {
+    background-color: #2d0037;
+    color: #f0e4f4;
+}
+
+.offcanvas-end .nav-link {
+    color: #ff73ab;
+}
+
+.offcanvas-end .nav-link:hover {
+    color: #a65ea7;
+}
+
+.btn-close {
+    color: white;
+    /* Esto asegura que el botón tome el color blanco */
+    background-color: transparent;
+    /* Evita cualquier fondo que interfiera */
+    border: none;
+    /* Sin borde */
+}
+
+.btn-close::before,
+.btn-close::after {
+    background-color: white;
+    /* Cambia el color de las líneas */
+}
+
+.btn-close:hover::before,
+.btn-close:hover::after {
+    background-color: pink;
+    /* Cambia a rosa al hacer hover */
+}
+
+
+/*
+ESTILOS DEL HERO
+*/
+
+.hero {
+    height: 100vh;
+    /* Ocupa toda la pantalla */
+}
+
+.hero-text {
+    max-width: 75%;
+    /* Texto ocupa la mitad */
+}
+
+.hero-img {
+    max-width: 25%;
+    /* Imagen ocupa la otra mitad */
+    border-radius: 10px;
+    /* Bordes suaves */
+}
+
+/* Animación solo para el nombre */
+.typing-name {
+    font-size: 3rem;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #ff73ab;
+    /* Simula el cursor */
+    animation: typing 4s steps(20, end), blink 0.6s step-end infinite;
+}
+
+/* El texto dinámico no comparte animación */
+.dynamic-text {
+    white-space: nowrap;
+    /* Evita saltos de línea */
+    overflow: hidden;
+    /* Oculta texto extra durante la animación */
+    font-size: 1.5rem;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #ff73ab;
+    }
+}
+
+
+/*
+REDES SOCIALES
+*/
+.redes-sociales a:hover i {
+    color: #ff73ab;
+    /* Color rosa al pasar el cursor */
+    transition: color 0.3s;
+}
+
+.redes-sociales a:hover p {
+    color: #ff73ab;
+}
+
+/*
+BOTÓN CON CONFETI
+*/
+
+#floating-icon {
+    position: absolute;
+    width: 100px;
+    /* Tamaño del contenedor del pepino */
+    height: 100px;
+    /* Tamaño proporcional */
+    cursor: pointer;
+    animation: float 3s infinite ease-in-out, rotate 2s linear infinite;
+    /* Flotación y rotación */
+}
+
+#floating-icon img {
+    width: 100%;
+    /* Tamaño de la imagen dentro del contenedor */
+    height: 100%;
+    /* Escalar imagen dentro del div */
+    border-radius: 50%;
+    /* Opcional: borde redondeado */
+}
+
+.hidden {
+    display: none;
+}
+
+/* Animación de flotación */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Animación de rotación */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
